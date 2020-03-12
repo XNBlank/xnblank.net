@@ -1,0 +1,17 @@
+#[macro_use]
+
+use diesel::prelude::*;
+use diesel::mysql::MysqlConnection;
+use dotenv::dotenv;
+use std::env;
+
+#[path="./schema.rs"] pub mod schema;
+#[path="./models.rs"] pub mod models;
+
+pub fn establish_connection() -> MysqlConnection {
+    dotenv().ok();
+
+    let database_url = "mysql://USERNAME:PASSWORD@localhost/DATABASE";
+    MysqlConnection::establish(&database_url)
+        .expect(&format!("Error connecting to {}", database_url))
+}

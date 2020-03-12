@@ -1,0 +1,21 @@
+[package]
+name = "website"
+version = "0.1.0"
+authors = ["blank"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rocket = "0.4.2"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+diesel = { version = "1.4.3", features = ["mysql", "sqlite"] }
+dotenv = "0.15.0"
+rocket-include-static-resources = "0.9.3"
+
+[dependencies.rocket_contrib]
+version = "0.4.2"
+default-features = false
+features = ["tera_templates", "serve"]

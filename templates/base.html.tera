@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>XNBlank</title>
+        <link rel="stylesheet" href="/static/css/main.css">
+    </head>
+    <body>
+    <nav>
+        <div class="logo-container"><a href="/"><img src="/static/images/logo-nobg.png" alt="XNBlank"/></a></div>
+        <ul id="main-menu">
+            <li class="nav-item"><a href="/">Home</a></li>
+            <li class="nav-item"><a href="/projects/websites">Developed Websites</a></li>
+            <li class="nav-item"><a href="/projects/games">Developed Games</a></li>
+            <li class="nav-item"><a href="/projects/other">Other Projects</a></li>
+            <li class="nav-item"><a href="/about">About</a></li>
+            <li class="nav-item"><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+        {% block content %}{% endblock content %}
+        <script src="/static/js/jquery.min.js"></script>
+        <script src="/static/js/tilt.jquery.min.js"></script>
+        <script src="/static/js/main.js"></script>
+    </body>
+</html>

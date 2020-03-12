@@ -1,0 +1,11 @@
+{% extends "base" %}
+{% import "macros" as macros %}
+{% block content %}
+
+<div class="card-container">
+    {% for item in items %}
+        {{ macros::project_item(title= item.title, description= item.body, category= item.category, image= item.image, url= item.url) }}
+    {% endfor %}
+</div>
+
+{% endblock content %}

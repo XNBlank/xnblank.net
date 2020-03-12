@@ -1,0 +1,7 @@
+{% macro project_item(title, description, category, image, url) %}
+    <div class="card tilt" style="background-image: url(/static/images/{{ category }}/{{ image }})">
+        <a href="{{ url }}" title="{{ title }}">
+            <span class="description">{{ title }}</span>
+        </a>
+    </div>
+{% endmacro project_item %}

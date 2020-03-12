@@ -1,0 +1,5 @@
+{% extends "base" %}
+
+{% block content %}
+    <h1>500 - Internal Server Error</h1>
+{% endblock content %}
