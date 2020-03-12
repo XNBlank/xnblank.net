@@ -1,3 +1,2 @@
 * linguist-vendored
 *.css linguist-language=Rust
-*.js linguist-language=Rust
