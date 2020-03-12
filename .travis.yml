@@ -1,7 +1,10 @@
 language: rust
+dist: xenial
+os: linux
 rust:
   - nightly
 jobs:
   allow_failures:
     - rust: nightly
   fast_finish: true
+cache: cargo
